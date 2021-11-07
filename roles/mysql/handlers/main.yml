@@ -1,0 +1,8 @@
+---
+- name: restart mysql
+  service:
+    name: mysqld
+    state: reloaded
+    daemon_reload: yes
+    enabled: yes
+  become: yes
